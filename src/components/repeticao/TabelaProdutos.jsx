@@ -5,7 +5,7 @@ import produtos from "../data/produtos";
 export default props => {
     return (
         <div>
-            <tabela>
+            <table>
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -18,7 +18,7 @@ export default props => {
                         return <tr key={i}><td>{p.id}</td><td>{p.nome}</td><td>{p.preco}</td></tr>
                     })}
                 </tbody>
-            </tabela>
+            </table>
             
         </div>
     )

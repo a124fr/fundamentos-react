@@ -11,7 +11,7 @@ import Familia from './components/basicos/Familia';
 
 // A Forma mais reduzida e uma função	
 export default () => (
-	<div class="App">
+	<div className="App">
 		<h1>Fundamentos React(Arrow)</h1>
 		<div className='Cards'>			
 				{/* <Card titulo="Componente com Filhos" color="">
