@@ -30,12 +30,22 @@ class Contador extends Component {
     dec = () => {
         this.setState({ numero: this.state.numero - this.state.passo });
     }
+        
+    setPasso = (event) => {
+        this.setState({
+            passo: +event.target.value // + faz a conversão para o valor númerico
+        })
+    }
 
     render() {
         return (
             <div>
                 <h2>Contador</h2>                
                 <h3>{this.state.numero}</h3>
+                <div>
+                    <label htmlFor="passoInt">Passo: </label>
+                    <input id="passoInt" type="number" value={this.state.passo} onChange={this.setPasso} />
+                </div>
                 {/* 1° Forma */}
                 {/* <button onClick={this.inc}>+</button>  */}
                 {/* 2° Forma */}
