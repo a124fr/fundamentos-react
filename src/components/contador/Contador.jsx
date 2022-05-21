@@ -13,7 +13,8 @@ class Contador extends Component {
     // }
 
     state = {
-        numero: this.props.numeroInicial
+        numero: this.props.numeroInicial || 0,
+        passo: this.props.passoInicial || 5
     }
 
     // usado na 1°, 2°, 3° forma
@@ -23,11 +24,11 @@ class Contador extends Component {
     
     /* 4° Forma */    
     inc = () => {
-        this.setState({ numero: this.state.numero + 1 });
+        this.setState({ numero: this.state.numero + this.state.passo });
     }
 
     dec = () => {
-        this.setState({ numero: this.state.numero - 1 });
+        this.setState({ numero: this.state.numero - this.state.passo });
     }
 
     render() {

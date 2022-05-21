@@ -24,7 +24,7 @@ export default () => (
 		<h1>Fundamentos React(Arrow)</h1>
 		<div className='Cards'>	
 				<Card titulo="#12 - Contador" color="#424242">
-					<Contador numeroInicial={20} />
+					<Contador numeroInicial={20} passoInicial={5} />
 				</Card>			
 				<Card titulo="#11 - Componente Controlado" color="#8BAD39">
 					<Input />
