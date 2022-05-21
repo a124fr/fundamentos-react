@@ -23,7 +23,11 @@ class Contador extends Component {
     
     /* 4° Forma */    
     inc = () => {
-        this.setState({ numero: this.state.numero+1 })
+        this.setState({ numero: this.state.numero + 1 });
+    }
+
+    dec = () => {
+        this.setState({ numero: this.state.numero - 1 });
     }
 
     render() {
@@ -36,10 +40,12 @@ class Contador extends Component {
                 {/* 2° Forma */}
                 {/* <button onClick={this.inc.bind(this)}>+</button> */}
                 {/* 3° Forma */}
+                {/* Devido ao contexto léxico da Arrow Function é possível fazer essa operação. */}
                 {/* <button onClick={()=> this.inc()}>+</button> */}
                 {/* 4° Forma */}
                 {/* Devido ao contexto léxico da Arrow Function é possível fazer essa operação. */}
-                <button onClick={this.inic}>+</button>
+                <button onClick={this.inc}>+</button>
+                <button onClick={this.dec}>-</button>
             </div>
         )
     }
