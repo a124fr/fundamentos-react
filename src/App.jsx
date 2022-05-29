@@ -25,7 +25,7 @@ export default () => (
 		<h1>Fundamentos React(Arrow)</h1>
 		<div className='Cards'>	
 				<Card titulo="#13 - Desafio Gerar Numeros Mega Sena" color="#424242">
-					<Mega />
+					<Mega qtde={8} />
 				</Card>	
 				<Card titulo="#12 - Contador" color="#424242">
 					<Contador numeroInicial={20} passoInicial={5} />
