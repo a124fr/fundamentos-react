@@ -17,12 +17,16 @@ import DiretaPai from './components/comunicacao/DiretaPai';
 import IndiretaPai from './components/comunicacao/IndiretaPai';
 import Input from './components/formulario/Input';
 import Contador from './components/contador/Contador';
+import Mega from './components/mega/Mega';
 
 // A Forma mais reduzida e uma função	
 export default () => (
 	<div className="App">
 		<h1>Fundamentos React(Arrow)</h1>
 		<div className='Cards'>	
+				<Card titulo="#13 - Desafio Gerar Numeros Mega Sena" color="#424242">
+					<Mega />
+				</Card>	
 				<Card titulo="#12 - Contador" color="#424242">
 					<Contador numeroInicial={20} passoInicial={5} />
 				</Card>			
